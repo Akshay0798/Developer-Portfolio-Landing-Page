@@ -1,1 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;1,500&display=swap');
+*{
+   margin: 0;  
+}
+section{
+    display: block;
+}
+.hero-section{
+    background-image: url(bg-img.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover; 
+}
+.hero-heading{
+    
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-top: 60px;
+}
+.hero-heading h1{
+    text-transform: uppercase;
+}
+.hero-heading h1, .hero-heading h2{
+    font-family:'Lato';
+    font-weight: 400;
+    font-size: 50px;    
+    align-items: center;
+}
+.hero-heading h2 span{
+    font-family:'Lato';
+    font-size: 15px;
+}
+.black-box-section{
+    background-color: black;
+    color: white;
+    text-transform:uppercase;
+}
+.black-box-text h3{
+    font-family:'Lato';
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+}
+.black-box-text span{
+    font-family:'Lato'; 
+    font-size: 96px;
+    color: white;
+}
 
+.card-container{
+    display: grid;   
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    margin: 40px 100px;
+    gap: 20px;
+}
+
+.grid-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+
+}
+.card{
+    border-radius: 5px;
+    max-width: 340px;   
+    height: 400px;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.card img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.card-content{
+    margin: 10px;
+    font-family:'Lato';
+}
+
+.card-content h3{
+    margin: 15px 0px;
+}
+.bottom-section{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+
+}
+.contact-me{
+    background-color: rgb(4, 95, 4);
+}
+.About-me{
+    background-color: rgb(146, 38, 38);
+}
+.contact-me,.About-me{
+    color: white;
+    max-width: 100%;
+    padding: 30px 20px 60px 30px;
+}
+.contact-me h3,.About-me h3{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-me p,.About-me p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.contact-me span{
+    display: block;   
+    margin-top: 10px;
+}
+
+@media (max-width:786px){
+    .hero-section{
+        min-height: 50vh;
+    }
+    .black-box-text h3{
+        font-size: 24px;
+    }
+    .bottom-section{
+        flex-direction:column;
+    }
+}
